@@ -1,0 +1,29 @@
+{
+	"contacts":{
+		"name":"Bride Pretty",
+		"domain":"rybavorle.ru",
+		"domain_link":"http://rybavorle.ru/",
+		"agreement_page":"agreement",
+		"copyright":"Все права защищены",
+		"email":"sale@rybavorle.ru",
+		"email_name":"<span>sale</span>@rybavorle.ru",
+		"phone":"+7 (910) <span>303-37-71</span>", 
+		"phone_tel":"+79103033771",
+		"address":"г.&nbsp;Орёл, ул.&nbsp;Поселковая д.&nbsp;15"
+	},
+	"soc":{
+		"vk":"https://vk.com/",
+		"fb":"https://www.facebook.com/",
+		"inst":"https://www.instagram.com/"
+	},
+	"url-path-css":"/wp-content/themes/azbnbasetheme/css",
+	"url-path-css":"/css",
+	"url-path-img":"/wp-content/themes/azbnbasetheme/img",
+	"url-path-img":"/img",
+	"url-path-js":"/wp-content/themes/azbnbasetheme/js",
+	"url-path-js":"/js",
+	"url-path-plugins":"/wp-content/themes/azbnbasetheme/plugins",
+	"url-path-plugins":"/plugins",
+	"url-path-favicon":"/wp-content/themes/azbnbasetheme/favicon",
+	"url-path-favicon":"/favicon"
+}
