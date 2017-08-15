@@ -32,7 +32,7 @@
 		text-align: center;
 	}
 	&preview{
-		margin: 0 auto 25px;
+		margin: 0 auto 5px;
 		@media @media-device{
 			width: 120px;
 			height: 120px;
@@ -43,14 +43,14 @@
 		}
 	}
 	&note{
+		font-size: @b-fs - 2;
+		line-height: @b-lh - 6;
 		@media @media-device{
-			font-size: @b-fs - 2;
-			line-height: @b-lh - 6;
 			br {display: none}
 		}
-		@media @media-screen {			
+		/*@media @media-screen {			
 			.calcFontSize(16, 18, 320, 1680);
 			.calcLineHeight(22, 24, 320, 1680); 
-		}
+		}*/
 	}
 }

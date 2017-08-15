@@ -12,15 +12,17 @@
 		}
 	}
 	&bg{
-		background-image: url("@{url-path-img}/default/bg-catalog-day.png");
-		max-width: 390px;
-		max-height: 250px;
-		width: 22vw;
-		height: 14vw;
-		position: absolute;
-		transform: translateY(-27%);
-		top: 0;
-		left: .5vw;
+		@media @media-screen {		
+			background-image: url("@{url-path-img}/default/bg-catalog-day.png");
+			max-width: 390px;
+			max-height: 250px;
+			width: 22vw;
+			height: 14vw;
+			position: absolute;
+			transform: translateY(-27%);
+			top: 0;
+			left: .5vw;
+		}
 	}
 }
 .catalog-promo__{

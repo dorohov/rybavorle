@@ -32,7 +32,7 @@
 		text-align: center;
 	}
 	&preview{
-		margin: 0 auto 25px;
+		margin: 0 auto 5px;
 		@media @media-device{
 			width: 120px;
 			height: 120px;
@@ -43,15 +43,15 @@
 		}
 	}
 	&note{
+		font-size: @b-fs - 2;
+		line-height: @b-lh - 6;
 		@media @media-device{
-			font-size: @b-fs - 2;
-			line-height: @b-lh - 6;
 			br {display: none}
 		}
-		@media @media-screen {			
+		/*@media @media-screen {			
 			.calcFontSize(16, 18, 320, 1680);
 			.calcLineHeight(22, 24, 320, 1680); 
-		}
+		}*/
 	}
 }
 .basket-btn__{
@@ -556,15 +556,17 @@
 		}
 	}
 	&bg{
-		background-image: url("@{url-path-img}/default/bg-catalog-day.png");
-		max-width: 390px;
-		max-height: 250px;
-		width: 22vw;
-		height: 14vw;
-		position: absolute;
-		transform: translateY(-27%);
-		top: 0;
-		left: .5vw;
+		@media @media-screen {		
+			background-image: url("@{url-path-img}/default/bg-catalog-day.png");
+			max-width: 390px;
+			max-height: 250px;
+			width: 22vw;
+			height: 14vw;
+			position: absolute;
+			transform: translateY(-27%);
+			top: 0;
+			left: .5vw;
+		}
 	}
 }
 .catalog-promo__{
@@ -3153,17 +3155,18 @@ blockquote {
 			position: relative;
 			padding-top: 40px;
 			padding-bottom: 40px;
-			min-height: 360px;
+			min-height: 250px;
 		}
+		@media @media-size-xs-l {min-height: 350px;}
 		@media @media-size-sm {
 			padding-top: 70px;
 			padding-bottom: 70px;
 		}
 		@media @media-size-sm-p {
-			min-height: 60vw;
+			min-height: 50vw;
 		}
 		@media @media-size-sm-l {
-			min-height: 52vw;
+			min-height: 42vw;
 		}
 		@media @media-size-md{
 			min-height: ~"calc(100vh - @{navbar-top-md})";			
@@ -3173,11 +3176,13 @@ blockquote {
 			padding-top: @navbar-top-screen;
 		}
 		@media @media-size-lg{
-			min-height: 100vh;
 			padding-top: @navbar-top-lg;		
 		}
 		@media @media-size-xxl{	
 			padding-top: @navbar-top-screen-xxl;
+			height: 38vw;
+    		max-height: 705px;
+    		min-height: 0;
 		}
 	}
 	&preview{
@@ -3221,6 +3226,9 @@ blockquote {
 		}
 	}
 	&inner{
+		@media @media-size-xs-p {
+		    max-width: 180px;
+		}
 		@media @media-screen {
 			position: absolute;
 			top: 35%;
@@ -3234,8 +3242,9 @@ blockquote {
 		font-family: @b-ff-2;
 		margin: 0;
 		letter-spacing: 0.5px;
-		.calcFontSize(18, 37, 320, 1680);
-		.calcLineHeight(24, 43, 320, 1680);			
+		.calcFontSize(18, 30, 320, 1680);
+		.calcLineHeight(24, 36, 320, 1680);	
+		color: @blue;		
 	}
 	&heading-item{
 		display: block;
@@ -3243,8 +3252,8 @@ blockquote {
 			br{display: none;}		
 		}
 		&.is--lg{
-			.calcFontSize(24, 82, 320, 1680);
-			.calcLineHeight(30, 70, 320, 1680);	
+			.calcFontSize(24, 75, 320, 1680);
+			.calcLineHeight(30, 62, 320, 1680);	
 			margin-bottom: 1.2vw;
 		}
 	}
