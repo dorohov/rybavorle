@@ -665,6 +665,7 @@
 			@media @media-size-xs-l {.makeCols(6, 12);}
 			@media @media-size-sm {.makeCols(4, 12);}
 			@media @media-screen {.makeCols(2.4, 12);}
+			@media @media-size-md {.makeCols(3, 12);}
 		}
 	}
 	&item{
@@ -1899,12 +1900,16 @@ textarea.form__control{height: 150px;}
 		width: 100%;
 		z-index: 100;
 		background-color: @navbar-bg-screen;
+	    padding-top: 34px;
+    	padding-bottom: 34px;
 		&.opacity{
 			opacity: 0;
 			transform: translateY(-100%);
 			transition: @trs-site;			
-			padding-top: 20px;
-			padding-bottom: 20px;			
+			//padding-top: 20px;
+			//padding-bottom: 20px;				
+			padding-top: 30px;
+			padding-bottom: 30px;		
 		}
 		&.fixed{
 			position: fixed;
@@ -1914,6 +1919,22 @@ textarea.form__control{height: 150px;}
 			opacity: 1;
 			transform: translateY(0%);
 			transition: @trs-site;
+		}
+	}
+	@media @media-size-md {		
+		padding-top: 10px;
+		padding-bottom: 10px; 
+		&.opacity{				
+			padding-top: 10px;
+			padding-bottom: 10px;	 	
+		}
+	}
+	@media @media-size-lg {
+		padding-top: 25px;
+		padding-bottom: 25px;
+		&.opacity{				
+			padding-top: 15px;
+			padding-bottom: 15px;	 	
 		}
 	}
 }
@@ -1929,20 +1950,17 @@ textarea.form__control{height: 150px;}
 				//width: 13%;
 				width: 11%;
 				.navbar-site.opacity &{width: 10%;}
+				display: none;
 			}
-			//@media @media-size-xxl{width: 11%;}
-			//@media @media-size-lg{width: 13%}
 		}
 		&.is--collapse{
 			@media @media-device{width: 0; padding: 0}
 			@media @media-screen-lg{
-				//width: 87%; 
-				width: 89%; 
-				position: relative;				
-				.navbar-site.opacity &{width: 90%;}
+				position: relative;		
+				//width: 89%; 		
+				//.navbar-site.opacity &{width: 90%;}
+				width: 100%;
 			}
-			//@media @media-size-xxl{width: 89%;}
-			//@media @media-size-lg{width: 87%}
 		}
 	}
 	//header
@@ -3169,20 +3187,23 @@ blockquote {
 			min-height: 42vw;
 		}
 		@media @media-size-md{
-			min-height: ~"calc(100vh - @{navbar-top-md})";			
+			//min-height: ~"calc(100vh - @{navbar-top-md})";
+			height: 38vw;
+    		max-height: 705px;
+    		min-height: 0;	
 		}
 		@media @media-screen-lg{		
-			min-height: 100vh;
+			//min-height: 100vh;
 			padding-top: @navbar-top-screen;
+			height: 38vw;
+    		max-height: 705px;
+    		min-height: 0;
 		}
 		@media @media-size-lg{
 			padding-top: @navbar-top-lg;		
 		}
 		@media @media-size-xxl{	
 			padding-top: @navbar-top-screen-xxl;
-			height: 38vw;
-    		max-height: 705px;
-    		min-height: 0;
 		}
 	}
 	&preview{

@@ -30,20 +30,23 @@
 			min-height: 42vw;
 		}
 		@media @media-size-md{
-			min-height: ~"calc(100vh - @{navbar-top-md})";			
+			//min-height: ~"calc(100vh - @{navbar-top-md})";
+			height: 38vw;
+    		max-height: 705px;
+    		min-height: 0;	
 		}
 		@media @media-screen-lg{		
-			min-height: 100vh;
+			//min-height: 100vh;
 			padding-top: @navbar-top-screen;
+			height: 38vw;
+    		max-height: 705px;
+    		min-height: 0;
 		}
 		@media @media-size-lg{
 			padding-top: @navbar-top-lg;		
 		}
 		@media @media-size-xxl{	
 			padding-top: @navbar-top-screen-xxl;
-			height: 38vw;
-    		max-height: 705px;
-    		min-height: 0;
 		}
 	}
 	&preview{
