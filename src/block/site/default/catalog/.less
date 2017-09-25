@@ -108,6 +108,32 @@
 			padding-bottom: @panel-gutter-screen + 3vw;
 		}
 	}
+	&navbar{
+		margin: 0 -15px 35px;
+		padding: 0;
+		list-style: none;
+		display: flex;
+		justify-content: center;
+		@media @media-screen {
+			margin-bottom: 3.5vw;
+		}
+	}
+	&navbar-item{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	&navbar-link{
+		display: block;
+		width: 40px;
+		height: 40px;
+		color: @b-color-a;
+		padding: 5px;
+		svg{display: block}
+		.catalog-category__navbar-item.is--active &{
+			cursor: default;
+			color: darken(@blue-light, 15%);
+		}
+	}
 	&row{
 		@media @media-size-xs-l {justify-content: center;}
 	}
