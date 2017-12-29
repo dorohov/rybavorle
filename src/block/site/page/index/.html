@@ -1,0 +1,24 @@
+<div class="{{prefix_block}}banner">
+	<img src="{{url-path-img}}/temp/banner-ny-1920x210.png" alt="">
+</div>
+[[azbntple 
+	tpl="/src/block/site/default/advantages/panel.html" 
+	block_prefix="advantages-panel__"
+]]
+[[azbntple 
+	tpl="/src/block/site/default/catalog/panel-index-items.html" 
+	catalog_prefix="catalog-panel-day__"
+]]	
+<div class="content-block {{prefix_block}}block" role="main">
+	<div class="container content-block__container  is--nopadding">
+		[[azbntple 
+			tpl="/src/block/site/default/catalog/panel-index-catalog.html" 
+			catalog_prefix="catalog-category__"
+		]]
+	</div>
+</div>
+[[azbntple 
+	tpl="/src/block/site/default/form/panel.html" 
+	form_prefix="form__"
+	form_mod="is--panel"
+]]	
