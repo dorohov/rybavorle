@@ -69,6 +69,12 @@
 		&:hover{
 			color: @b-color-a;
 		}
+		&.is--navbar{
+			@media @media-device-lg {
+				width: 26px;
+				height: 26px
+			}
+		}
 	}
 	&item-count{
 		position: absolute;
@@ -484,6 +490,12 @@
 				color: @b-color;
 			}
 		}
+		&.is--tel{
+			@media @media-device {
+				width: 26px;
+				height: 26px;
+			}
+		}
 	}
 	/*&link{
 		display: inline-block;
@@ -637,6 +649,10 @@
 		}
 	}
 	&note{
+		text-align: center;
+		margin-bottom: 15px;
+	}
+	&btn{
 		text-align: center;
 		margin-bottom: 15px;
 	}
@@ -1991,17 +2007,23 @@ textarea.form__control{height: 150px;}
 	}
 	//header
 	&header{}
+	&header-btn{
+		margin: 0 -8px;
+	}
+	&header-btn-item{
+		padding: 0 8px;
+	}
 	&row-header{
 		align-items: center;
 		justify-content: space-between;
 	}
 	&cols-header{
-		&.is--hamburger{ 
-			@media @media-device-lg{display: block;}
-			@media @media-screen-lg{display: none;} 
-		}
+		&.is--hamburger,
 		&.is--tel{ 
-			@media @media-device-lg{display: block;}
+			@media @media-device-lg{
+				display: block;
+				width: 100px;
+			}
 			@media @media-screen-lg{display: none;} 
 		}
 		&.is--brand{
@@ -2016,7 +2038,7 @@ textarea.form__control{height: 150px;}
 		width: 100%;
 		transition: none;
 		@media @media-device-lg{
-			max-width: 90px;
+			max-width: 85px;
 			height: 70px;
 		}
 		@media @media-screen-lg{
