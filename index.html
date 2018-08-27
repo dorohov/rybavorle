@@ -20,7 +20,7 @@
 
 <link href="/css/site.css" rel="stylesheet"> 		
 	</head>
-	<body class="is--index-page"> 
+	<body> 
 		<nav class="navbar navbar-site scroll">
 	<div class="container navbar__container">
 		<div class="row navbar__row">
@@ -151,13 +151,21 @@
 		</div>
 	</div>
 </nav> 
-		<header class="index-page-header" style="background-image: url(/img/temp/bg-index-header.jpg)">
-	<div class="index-header__container container">	
-		<div class="index-header__inner">
-			<h1 class="index-header__heading">
-				<span class="index-header__heading-item  is--lg">Рыба и<br> морепродукты</span>
-				<span class="index-header__heading-item  is--sm">оптом и в розницу с доставкой в Орле</span>			
-			</h1>	
+		<header class="index-page-header">
+	<div class="index-header__slick" data-slider-slick="slick-header">	
+		<div class="index-header__slick-item">
+			<picture>
+				<source media="(min-width: 451px)" 
+						srcset="/img/temp/slider-item1.jpg">
+				<img src="http://via.placeholder.com/450x450" alt="">
+			</picture>
+		</div>	
+		<div class="index-header__slick-item">
+			<picture>
+				<source media="(min-width: 451px)" 
+						srcset="http://via.placeholder.com/1920x600">
+				<img src="http://via.placeholder.com/450x450" alt="">
+			</picture>
 		</div>
 	</div>
 </header>		

@@ -160,3 +160,34 @@
 		}	
 	}*/
 }
+.btn-nav__{
+	&item{	
+		display: inline-block;
+		position: absolute;
+		z-index: 5;
+		top: 50%;
+		transform: translateY(-50%);
+		outline: none;
+		background: none;
+		text-decoration: none;
+		transition: @trs-btn;
+		border: 0;	
+		background-color: @blue-grey;
+		color: @white;
+		width: 36px;
+		height: 36px;
+		padding: 8px;
+		border-radius: 50%;
+		&.is--prev{
+			left: 5px;
+			padding: 8px 10px 8px 6px;
+		}
+		&.is--next{
+			right: 5px;
+			padding: 8px 6px 8px 10px;
+		}
+		&:hover{
+			background-color: @blue;
+		}
+	}
+}
